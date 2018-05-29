@@ -1,0 +1,19 @@
+{
+
+  "description": "第一版仅支持微信公众号页面。See https://steemit.com/cn/@ivysrono/6gt95s",
+  "manifest_version": 2,
+  "name": "NoLazyload",
+  "version": "1.0",
+  "homepage_url": "https://github.com/ivysrono/WebExtensions",
+  "icons": {
+    "48": "icons/baseline-chrome_reader_mode-24px.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://mp.weixin.qq.com/s*"],
+      "js": ["NoLazyload.js"]
+    }
+  ]
+
+}
