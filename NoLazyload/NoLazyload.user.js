@@ -2,7 +2,7 @@
 // @name          NoLazyload
 // @namespace     https://github.com/ivysrono/Scripts
 // @author        ivysrono
-// @version       1.3
+// @version       1.4
 // @match         https://mp.weixin.qq.com/s*
 // @grant         none
 // ==/UserScript==
@@ -20,13 +20,12 @@ if (imgs) {
 }
 
 // 将网页标题修改回文章标题
-let runcount = 0;
 let realTitle = document.getElementById("activity-name").innerHTML;
 function real() {
-  // “微信扫一扫关注该公众号”出现后会将标题修改为公众号名，可能脚本执行后又被改回去，二次修改可以保证成功。也许用 MutationObserver 是更好的选择。
-  if (document.title != realTitle && runcount < 2) {
+  // “微信扫一扫关注该公众号”出现后会将页面标题修改为公众号名。也许用MutationObserver 是更好的选择。
+  if (document.title != realTitle) {
     document.title = realTitle;
-    runcount++;
+    clearInterval(change);
   }
 }
-setInterval(real, 1000);
+change = setInterval(real, 1000);

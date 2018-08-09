@@ -1,10 +1,10 @@
 {
 
-  "description": "https://steemit.com/cn/@ivysrono/6gt95s",
+  "description": "https://github.com/ivysrono/NoLazyload",
   "manifest_version": 2,
   "name": "NoLazyload",
-  "version": "1.3",
-  "homepage_url": "https://github.com/ivysrono/WebExtensions",
+  "version": "1.4",
+  "homepage_url": "https://github.com/ivysrono/NoLazyload",
   "icons": {
     "48": "icons/baseline-chrome_reader_mode-24px.svg"
   },
