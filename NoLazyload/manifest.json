@@ -3,10 +3,10 @@
   "description": "https://github.com/ivysrono/NoLazyload",
   "manifest_version": 2,
   "name": "NoLazyload",
-  "version": "1.4",
+  "version": "1.5",
   "homepage_url": "https://github.com/ivysrono/NoLazyload",
   "icons": {
-    "48": "icons/baseline-chrome_reader_mode-24px.svg"
+    "48": "icons/baseline-image-24px.svg"
   },
 
   "content_scripts": [
