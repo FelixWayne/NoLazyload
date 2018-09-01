@@ -1,20 +1,16 @@
 {
-
   "description": "https://github.com/ivysrono/NoLazyload",
   "manifest_version": 2,
   "name": "NoLazyload",
-  "version": "1.5",
+  "version": "1.6",
   "homepage_url": "https://github.com/ivysrono/NoLazyload",
   "icons": {
-    "48": "icons/baseline-image-24px.svg"
+    "24": "icons/baseline-image-24px.svg"
   },
-
   "content_scripts": [
     {
       "matches": ["https://mp.weixin.qq.com/s*"],
       "js": ["NoLazyload.user.js"]
-      
     }
   ]
-
 }
